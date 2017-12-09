@@ -4,7 +4,8 @@
   "description": "Aplicacion para gestionar tareas que hacer",
   "main": "main.js",
   "scripts": {
-    "start": "node server/main.js"
+    "start": "node server/main.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "author": "Jose Guerrero",
   "license": "ISC",
