@@ -14,9 +14,10 @@ app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname + '/client/build/index.html'));
 })
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
+const MONGODB_URI = 'mongodb://heroku_dmw4jfzm:m499s55ol03d8emk9qm141lmmc@ds133796.mlab.com:33796/heroku_dmw4jfzm';
 
-mongoose.connect('mongodb://localhost:27017/todo', (err, res) => {
+mongoose.connect(MONGODB_URI + '/todolist', (err, res) => {
 	if (err) return console.log(`Error al conectar con MongoDB: ${err}`);	
 	console.log('Conexion con MongoDB establecida');
 	app.listen(port, () => {
