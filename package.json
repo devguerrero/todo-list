@@ -4,7 +4,7 @@
   "description": "Aplicacion para gestionar tareas que hacer",
   "main": "main.js",
   "scripts": {
-    "start": "node server/main.js",
+    "start": "node server/main.js"
   },
   "author": "Jose Guerrero",
   "license": "ISC",
