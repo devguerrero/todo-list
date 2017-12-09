@@ -1,0 +1,16 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Aplicacion para gestionar tareas que hacer",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server/main.js",
+  },
+  "author": "Jose Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  }
+}
