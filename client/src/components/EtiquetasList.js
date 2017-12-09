@@ -17,7 +17,7 @@ class EtiquetasList extends Component {
 	    })
 	}
 
-	handleActualizar(event) {
+	handleActualizar() {
 	    fetch('/api/etiqueta', { method: 'GET'})
 	    .then(res => res.json())
 	    .then(data => {

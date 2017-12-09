@@ -6,7 +6,8 @@ class Etiqueta extends Component {
 	    this.handleEliminar = this.handleEliminar.bind(this)
 	}
 
-	handleEliminar () {
+	handleEliminar (event) {
+		event.preventDefault();
 		fetch('/api/etiqueta/' + this.props._id, {
 			method: 'DELETE',
 			headers: {

@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 })
 
 const PORT = process.env.PORT || 8080;
-// 'mongodb://localhost:27017'
 const DB = process.env.MONGODB || 'mongodb://heroku_dmw4jfzm:m499s55ol03d8emk9qm141lmmc@ds133796.mlab.com:33796/heroku_dmw4jfzm';
 
 mongoose.connect(DB + '/todolist', (err, res) => {
