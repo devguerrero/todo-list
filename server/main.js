@@ -21,7 +21,7 @@ const DB = process.env.MONGODB || 'mongodb://localhost:27017';
 mongoose.connect(DB + '/todolist', (err, res) => {
 	if (err) return console.log(`Error al conectar con MongoDB: ${err}`);	
 	console.log('Conexion con MongoDB establecida');
-	app.listen(port, () => {
-		console.log(`TodoList escuchando en el puerto ${port}`);
+	app.listen(PORT, () => {
+		console.log(`TodoList escuchando en el puerto ${PORT}`);
 	});
 });
